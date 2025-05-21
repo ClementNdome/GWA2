@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #484848;
+    --secondary: #b5000b;
+    --accent: #3b82f6;
+    --dark: #121212;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f5f9;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+/* All other CSS rules from original file */

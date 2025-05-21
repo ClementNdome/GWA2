@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Gateway-A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="antialiased bg-gray-100">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-plane-departure text-3xl mr-2"></i>
+                        <span class="text-xl font-bold">Gateway-A</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="../features.html" class="nav-link px-3 py-2 text-sm font-medium">Features</a>
+                        <a href="../coverage.html" class="nav-link px-3 py-2 text-sm font-medium">Coverage</a>
+                        <a href="../pricing.html" class="nav-link px-3 py-2 text-sm font-medium">Pricing</a>
+                        <a href="../about.html" class="nav-link px-3 py-2 text-sm font-medium">About</a>
+                        <div class="relative group ml-4">
+                            <button class="flex items-center space-x-1">
+                                <span class="font-medium">John D.</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
+                                <a href="dashboard.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                                <a href="settings.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                                <a href="../account/login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Sidebar -->
+            <div class="md:w-1/4">
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+                    <div class="flex items-center mb-6">
+                        <div class="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">John Doe</h3>
+                            <p class="text-sm text-gray-600">Professional Plan</p>
+                        </div>
+                    </div>
+                    <nav class="space-y-1">
+                        <a href="dashboard.html" class="flex items-center px-3 py-2 bg-blue-50 text-blue-700 rounded-md font-medium">
+                            <i class="fas fa-tachometer-alt mr-3"></i>
+                            Dashboard
+                        </a>
+                        <a href="notams.html" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
+                            <i class="fas fa-exclamation-circle mr-3"></i>
+                            NOTAMs
+                        </a>
+                        <a href="weather.html" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
+                            <i class="fas fa-cloud-sun-rain mr-3"></i>
+                            Weather
+                        </a>
+                        <a href="airports.html" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
+                            <i class="fas fa-map-marked-alt mr-3"></i>
+                            Airports
+                        </a>
+                        <a href="reports.html" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            Reports
+                        </a>
+                        <a href="settings.html" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
+                            <i class="fas fa-cog mr-3"></i>
+                            Settings
+                        </a>
+                    </nav>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="font-bold mb-4">Quick Actions</h3>
+                    <div class="space-y-3">
+                        <button class="w-full flex items-center justify-between px-4 py-3 bg-blue-50 text-blue-700 rounded-md hover:bg-blue-100">
+                            <span>New Flight Plan</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <button class="w-full flex items-center justify-between px-4 py-3 bg-green-50 text-green-700 rounded-md hover:bg-green-100">
+                            <span>Generate Report</span>
+                            <i class="fas fa-file-export"></i>
+                        </button>
+                        <button class="w-full flex items-center justify-between px-4 py-3 bg-purple-50 text-purple-700 rounded-md hover:bg-purple-100">
+                            <span>Request Support</span>
+                            <i class="fas fa-headset"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="md:w-3/4">
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-2xl font-bold">Dashboard Overview</h2>
+                        <div class="flex items-center space-x-2">
+                            <div class="relative">
+                                <select class="appearance-none bg-gray-100 border border-gray-300 rounded-md pl-3 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Last 24 hours</option>
+                                    <option>Last 7 days</option>
+                                    <option selected>Last 30 days</option>
+                                    <option>Last 90 days</option>
+                                </select>
+                                <i class="fas fa-chevron-down absolute right-3 top-2.5 text-gray-500 text-xs"></i>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                                <i class="fas fa-sync-alt mr-2"></i> Refresh
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p class="text-sm text-blue-600 font-medium">Active NOTAMs</p>
+                                    <p class="text-2xl font-bold mt-1">24</p>
+                                </div>
+                                <div class="h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-exclamation-triangle text-blue-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">3 critical alerts</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p class="text-sm text-green-600 font-medium">Tracked Airports</p>
+                                    <p class="text-2xl font-bold mt-1">8</p>
+                                </div>
+                                <div class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marked-alt text-green-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">2 new updates</p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p class="text-sm text-purple-600 font-medium">Weather Alerts</p>
+                                    <p class="text-2xl font-bold mt-1">5</p>
+                                </div>
+                                <div class="h-10 w-10 bg-purple-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-cloud-showers-heavy text-purple-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">1 severe warning</p>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p class="text-sm text-yellow-600 font-medium">Saved Routes</p>
+                                    <p class="text-2xl font-bold mt-1">12</p>
+                                </div>
+                                <div class="h-10 w-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-route text-yellow-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">Last used 2 days ago</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Section -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-bold">African Airspace Overview</h3>
+                            <button class="text-sm text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-expand mr-1"></i> Fullscreen
+                            </button>
+                        </div>
+                        <div class="map-container h-64 rounded-lg">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                                <div class="text-center p-4 bg-white bg-opacity-90 rounded-lg">
+                                    <h3 class="text-lg font-bold mb-1">Interactive Airspace Map</h3>
+                                    <p class="text-sm mb-2">Click to explore detailed views</p>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-md text-sm">
+                                        Enable Live View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Activity -->
+                    <div>
+                        <h3 class="font-bold mb-4">Recent Activity</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start p-3 hover:bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                        <i class="fas fa-exclamation text-blue-600 text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-3 flex-1">
+                                    <p class="text-sm font-medium">New NOTAM issued for FAOR (Johannesburg)</p>
+                                    <p class="text-xs text-gray-500 mt-1">Runway 03L/21R closed for maintenance until 15:00 UTC</p>
+                                    <p class="text-xs text-gray-400 mt-1">30 minutes ago</p>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                    View
+                                </button>
+                            </div>
+                            
+                            <div class="flex items-start p-3 hover:bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-cloud-sun text-green-600 text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-3 flex-1">
+                                    <p class="text-sm font-medium">Weather update for HKJK (Nairobi)</p>
+                                    <p class="text-xs text-gray-500 mt-1">Thunderstorms expected within 20nm of airport</p>
+                                    <p class="text-xs text-gray-400 mt-1">2 hours ago</p>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Reports -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="font-bold mb-4">Flight Operations</h3>
+                        <div class="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
+                            <p class="text-gray-500">Flight operations chart</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="font-bold mb-4">Weather Trends</h3>
+                        <div class="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
+                            <p class="text-gray-500">Weather trends chart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white pt-12 pb-8">
+        <!-- Same footer content as index.html -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Dashboard specific JS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulate live data updates
+            setInterval(() => {
+                const stats = document.querySelectorAll('.stats-card .text-2xl');
+                stats.forEach(stat => {
+                    const current = parseInt(stat.textContent);
+                    const change = Math.floor(Math.random() * 3) - 1; // -1, 0, or 1
+                    stat.textContent = Math.max(0, current + change);
+                });
+            }, 10000);
+        });
+    </script>
+</body>
+</html>
